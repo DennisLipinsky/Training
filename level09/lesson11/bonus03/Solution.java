@@ -3,7 +3,9 @@ package com.javarush.test.level09.lesson11.bonus03;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /* Задача по алгоритмам
 Задача: Пользователь вводит с клавиатуры список слов (и чисел). Слова вывести в возрастающем порядке, числа - в убывающем.
@@ -76,7 +78,6 @@ public class Solution
                 }
             }
         }
-        //printList(digArray);
 
         //strings sort
         for (int i = 0; i < letArray.size(); i++) {
@@ -90,7 +91,6 @@ public class Solution
                 }
             }
         }
-        //printList(letArray);
 
         //replacing Strings and digits in sorted order
         for (int i = 0; i < array.length; i++) {
@@ -102,7 +102,6 @@ public class Solution
                 letArray.remove(0);
             }
         }
-
     }
 
     //Метод для сравнения строк: 'а' больше чем 'b'
@@ -129,11 +128,4 @@ public class Solution
         }
         return true;
     }
-
-//    public static void printList(ArrayList list) {
-//        for (int i = 0; i < list.size(); i++) {
-//            System.out.print(list.get(i) + " ");
-//        }
-//        System.out.println();
-//    }
 }
