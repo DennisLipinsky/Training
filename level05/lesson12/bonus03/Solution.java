@@ -13,6 +13,20 @@ public class Solution
 {
     public static void main(String[] args) throws Exception
     {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int maximum = -2147483648;
 
+        //напишите тут ваш код
+        int n = Integer.parseInt(reader.readLine());
+        if (n > 0) {
+            String s;
+            for (int i = 0; i < n; i++) {
+                s = reader.readLine();
+                if (maximum < Integer.parseInt(s)) {
+                    maximum = Integer.parseInt(s);
+                }
+            }
+        }
+        System.out.println(maximum);
     }
 }
